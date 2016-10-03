@@ -4,8 +4,8 @@ var context = canvas.getContext("2d");
 
 var scaleBar = document.getElementById("scaleBar");
 
-var canvasWidth = canvas.width = 2000;
-var canvasHeight = canvas.height = 2000;
+var canvasWidth = canvas.width = 1000;
+var canvasHeight = canvas.height = 1000;
 
 var minEdge = 0;
 var curScale = 1;
