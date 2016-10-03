@@ -141,7 +141,8 @@ function updateImage() {
 
 function downloadFile(button, canvasId, filename) {
     var dt = document.getElementById(canvasId).toDataURL();
-    button.href = dt;
+    //button.href = dt;
+	button.href = dt.replace(/^data:image\/[^;]/, 'data:application/octet-stream');
     button.download = filename;
 };
 
